@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Details{% endblock title %}
+
+{% block content %}
+<h1> {{ usr.nom }}</h1>
+<ul> {{ Usr.adresse }}
+    <li> phone : {{ usr.telephone }} </li>
+    <li> email : {{ usr.email }} </li>
+    <li> Birth Date {{ usr.date_naissance }} </li>
+</ul>
+
+<p>Back to <a href="/client">users</a></p>
+{% endblock content %}
